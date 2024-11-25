@@ -25,6 +25,13 @@ class CurrencyPickerThemeData {
   /// It defaults to a basic outline-bordered input decoration
   final InputDecoration? inputDecoration;
 
+  // [[tifler
+  ///The style to use for search text.
+  ///
+  /// If null, the style will be set to [TextStyle(fontSize: 17)]
+  final TextStyle? searchTextStyle;
+  // ]]tifler
+
   ///The flag size.
   ///
   /// If null, set to 25
@@ -42,6 +49,9 @@ class CurrencyPickerThemeData {
     this.inputDecoration,
     this.subtitleTextStyle,
     this.currencySignTextStyle,
+    // [[tifler
+    this.searchTextStyle,
+    // ]]tifler
     this.backgroundColor,
     this.bottomSheetHeight,
   });
